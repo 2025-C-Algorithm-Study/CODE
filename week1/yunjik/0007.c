@@ -16,7 +16,7 @@ void infront(Node** headptr, int newdata) {             //함수선언(head 자�
         return;
     }
 
-    newNode->data = newdata;
+    newNode->data = newdata;            
     newNode->next = *headptr;
     *headptr = newNode;
     printf("리스트 맨 앞에 추가완료\n");
@@ -113,7 +113,7 @@ int main() {
     Node* head = NULL;  //연결리스트 초기화 시키기
     int number;
     int incum;
-    while (1) {
+    while (1) {             
         printf("\n1:삽입(맨 앞에)\n2:삽입(맨 뒤에)\n3:삭제(맨 앞에)\n4:삭제(맨 뒤에)\n5:리스트 출력\n6:종료\n");
         scanf("%d", &number);
 
